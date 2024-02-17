@@ -1,0 +1,67 @@
+1. Why do we need static keyword in Java Programming?
+Ans: The tatic keyword in Java i ued to indicate that a member£belong to a cla rather than an
+intance of a class. Thi mean that£the member can be acceed without having to create an
+intance of£the class.
+
+Here are ome common ue of static in Java:¢
+ To create class-level variable that are hared by all intance of a£cla.¢
+ To create class-level method that can be called without creating an£intance of a cla.¢
+ To create a block of code that i executed when a clas is loaded.
+
+2. What is class loading and how does the Java program actually executes?
+Ans: class Loading
+In Java, claloading i the proce of loading cla file into the JVM£(Java Virtual machine) at
+runtime. It i reponible for loading clae£from variou ource, such a the file ytem, network,
+and databae, and making them available to the JVM for execution.
+
+Three phases of class loading:
+1.Loading
+2. Linking.
+3. Initialization.
+
+3.Can we mark a local variable as static?
+Ans: No.
+
+4. Why is a static method also called a class method?
+Ans: A tatic method is alo called a clas method becaue it tie to a£cla rather than an individual
+intance of a clas. Therefore, we need not to create an object of the cla to call and execute a
+static method.
+
+5. Why is the static block executed before the main method in java?
+Ans: When the dot cla file i loaded into memory, a tatic block i£executed. After executing the
+tatic block, JVM call the main method to£tart execution. Therefore, the tatic block i executed
+before the main£method.
+
+6. What is the use of static keyword Explain with an example
+Ans: The static keyword in Java is used to indicate that a member belongs to a class rather than an instance of a class. This means that the member can be accessed without having to create an instance of the class.
+
+Examples: 
+public class Counter {
+    private static int count = 0;
+    public Counter() {
+        count++;
+    }
+    public static int getCount() {
+        return count;
+    }
+}
+
+7. The difference between a static variable and instance variable is as
+follows.
+Ans: A static variable is also called a class variable whereas an instance variable is also called a non static variable.
+« Class variables can be accessed inside a static block, instance block, static method, instance method, and method of the inner class whereas,instance variable can be accessed only inside the instance members, and method of the inner class.
+« Class variable is always resolved during compile time whereas, instance variable is resolved during the runtime.
+« Static variables cannot be serialized in Java whereas instance variables can be serialized.
+
+8. Difference between static and non static members of a class
+Ans: static: 
+« These variables are called “class variables”.
+« These variables will get memory in the method area.
+« If the value does not change from object to object then we need to use static variables.
+« Inside a static area we can access static variables only.
+« Static variables are created using static keywords.
+
+Non-static:
+« These variables are called “instance variables”.
+« These variables will get memory in the heap area.
+« If the value changes from object to object then we need to use “non-static” variables.

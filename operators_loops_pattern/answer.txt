@@ -1,0 +1,65 @@
+1. What are the Conditional Operators in Java?
+Ans: They aJe used when a condition compJises moJe than one boolean expJession. FoJ instance/ if we want to
+pJint a numbeJ only if it is gJeateJ than 2 and less than 5/ then we will use conditional opeJatoJs to combine the
+2 expJessions. We have 3 types of conditional opeJatoJs - logical-and/ logical-oJ and teJnaJy opeJatoJ.
+
+Logical-and operator (&&)
+It is used when we want the condition to be tJue iff both the expJessions aJe tJue.
+
+Logical-or operator (||)
+This opeJatoJ is used when we aJe satisfied as long as any one of the boolean expJessions is evaluated as tJue.
+
+Ternary operator (?:)
+It is a smalleJ veJsion foJ the if-else statement. If the condition is tJue then the statement - 1 is executed else the
+statement - 2 is executed.
+
+2. What are the types of operators based on the number of operands?
+Ans: There are thJee types of opeJatoJs in java based on the numbeJ of opeJands. They aJe
+. Unary opeJator
+. Binary opeJator
+. Ternary opeJator
+.
+3. What is the use of Switch case in Java programming?
+Ans: Switch statement
+The switch case in java is used to select one of many code blocks foJ execution.
+Break keyword: As java Jeaches a bJeak keywoJd/ the contJol bJeaks out of the switch block. The execution of
+code stops on encounteJing this keywoJd/ and the case testing inside the block ends as the match is found. A
+lot of execution time can be saved because it ignoJes the Jest of the code's execution when theJe is a bJeak.
+Default keywoJd The keywoJd is used to specify the code executed when the expJession does not match any
+test case.
+The switch case in Java woJks like an if-else laddeJ/ i.e./ multiple conditions can be checked at once. Switch is
+pJovided with an expJession that can be a constant oJ liteJal expJession that can be evaluated. The value of the
+expJession is matched with each test case till a match is found. If theJe is no match/ the default keywoJd/ if
+specified- the associated code executes. OtheJwise/ the code specified foJ the matched test case is executed.
+
+4. What are the priority levels of arithmeti6 operation in <ava3
+Ans: High priority * / %
+     Low priority + -
+
+6. What is syntax of if else.
+Ans: if(condition1)
+     {
+
+     }
+     else if(condition2)
+     {
+
+     }
+     else
+     {
+
+     }
+
+7. What are the 3 types of iterative statements in java.
+Ans: for loop , while loop , do-while loop.
+
+8. Write a program to print 1 to 10 no.
+--> public class abc{
+     public static void main(String args[])
+     {
+          for(int i = 1 ; i <= 10 ; i++)
+          {
+               System.out.println(i);
+          }
+     }
+}

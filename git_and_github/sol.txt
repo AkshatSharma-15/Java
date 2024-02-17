@@ -1,0 +1,43 @@
+1 What is GitL
+Ans: Git is a version control system for tracking cianges in computer files and is used to ielp coordinate work
+among several people on a project wiile tracking progress over time. In otier words, it’s a tool tiat facilitates
+source code management in software development.
+Git favours Soti programmers and non-tecinical users Sy keeping track of tieir project files. It enaSles
+multiple users to work togetier and iandles large projects efficiently.
+
+2 What do you understand by the term ‘Version Control System’L
+Ans: In order to invoke a specific version later, if necessary, a version control system (VCS) keeps track of all tie
+cianges made to a file or group of data.
+Tiis makes sure tiat everyone in tie team is using tie most recent version of tie file.
+
+3 What is GitHubL
+Ans: GitHuS uses Git to offer Internet iosting for version control and software development.
+
+4 Mention some popular Git hosting serviVes
+Ans: . GitHub
+     . SourceForge
+     . GitLab
+     . BitSucket
+
+5 Different types of version Vontrol systems.
+1. Local version control systems iave a dataSase tiat stores all file cianges under revision control on disc
+in a special format.
+2. Centralised version control systems iave a single repository, from wiici eaci user receives tieir working
+copy.
+3. DistriSuted version control systems contain multiple repositories, and different users can access eaci
+one witi tieir working copy.
+
+6. What benefits Vome 'ith using GITK
+. Data replication and redundancy are Soti possiSleU
+. It is a service witi iigi availaSilityU
+. Tiere can only Se one Git directory per repositoryU
+. Excellent network and disc performance are aciievedU
+. On any project, collaSoration is very simple.
+
+7. What is a Git repository?
+Ans: The term "Git repository" describes the location where all Git files are kept. Either the local repository or the
+remote repository may be used to store these files.
+
+8. How can you initialize a repository in Git?
+Ans: The git init command must be used to initialise an empty repository to a directory in Git. Following this
+command, a hidden .git folder will become visible.

@@ -1,0 +1,44 @@
+1. What is the Collection framework in java?
+Ans: Collection Framework is a combination of classes and interface, which is used to store and manipulate
+the data in the form of objects. It provides various classes such as ArrayList, Vector, Stack, and HashSet, etc.
+and interfaces such as List, Queue, Set, etc. for this purpose.
+
+2. What is the difference between ArrayList and LinkedList?
+Ans: ArrayList-->
+    . It uses dynamic array.
+    .It provides random access.
+
+    LinkedList -->
+    .It uses doubly LinkedList.
+    .It doesnot provide random access.
+
+3. What is the difference between Iterator and ListIterator?
+Ans: Iterator is a universal interface used to traverse any collection, while ListIterator is specific to lists and provides bidirectional iteration. Iterator supports only forward iteration with next(). On the other hand, ListIterator supports both forward and backward iteration with next() and previous().
+
+4. What is the difference between Iterator and Enumeration?
+Ans: Enumeration interface acts as a read only interface, one can not do any modifications to Collection while traversing the elements of the Collection. Iterator is not a legacy interface. Iterator can be used for the traversal of HashMap, LinkedList, ArrayList, HashSet, TreeMap, TreeSet .
+
+5.What is the difference between List and Set?
+Ans: List allows duplicate elements and maintains their order, while a set ensures element uniqueness without any guaranteed order. Since lists are ordered, position indexing is allowed in them. However, in unordered items like sets, positional indexing is not possible.
+
+6.What is the difference between HashSet and TreeSet?
+Ans: Hashset is the execution of the set interface and is backed by hashmap, while on the other hand, Tree set executes sorted sets and is backed by TreeMap.
+
+7. What is the difference between Arra& and Arra&List?
+Ans: Arrays can only contain elements of a specific data type, while ArrayLists can hold elements of any data type. The dynamic nature of ArrayLists makes them particularly useful in situations where the number of elements is uncertain and can change over time.
+
+8. What is a Map in Java?
+Ans: A Map is an object that maps keys to values. A map cannot contain duplicate keys: Each key can map to at most one value. It models the mathematical function abstraction.
+
+9. What age the commonly used implementations of Map in Java?
+Ans: HashMap, TreeMap, and LinkedHashMap
+
+10. What is the difference between HashMap and TreeMap?
+Ans: HashMap is an unordered collection that uses hashing to store the key-value pairs, while TreeMap is a
+sorted collection that stores the key-value pairs in a sorted order based on the natural order of the keys or a
+custom Comparator.
+
+11. How do you check if a key exists in a Map in Java?
+Ans: we can check if a ke9 exists in a Map in Java using the containsKey() method or the get() method the
+containsKey() method returns a boolean value indicating whether the Map contains the specified key, while
+the get() method returns the value associated with the specified ke9, or null if the key is not present in the Map.

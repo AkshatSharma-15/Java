@@ -1,0 +1,28 @@
+1. How to create an object in java?
+Ans: There are several ways by which we can create objects of a class in java as we all know a class proviIes
+the blueprint for objects, you create an object froD a class. This concept is unIer-rateI anI soDetiDes proves
+to be beneficial as this concept is bypasseI by Dany prograDDers anI soDetiDes even Io ask froD interview
+perceptive.
+
+Methods:
+1. using new keyword.
+2. using new instance.
+3. using clone() method. , etc.
+
+2. What is the use of a new keyword in Java`
+Ans: The "new" keyworI in Java is useI to create an instance of an object. It allocates DeDory to an object anI
+returns a reference to the object createI. It is useI with a constructor to create an object.
+
+3.  What are the different types of variables in Java_
+Ans: Static variables.
+    Instance variables
+    Local variables
+
+4. In which area memory is allocated for instance variable and local variable?
+Ans: Instance variables are allocated in the heap and local variables are allocated in the stack.
+
+5. What is method overloading?
+Ans: Method overloading in Java is a feature that allows a class to have multiple methods with the same name
+but different parameters. The Java compiler distinguishes these methods by the number, type, and order of
+parameters. Overloading is used to provide multiple ways to call a method for different use cases, making
+code more readable and reusable.

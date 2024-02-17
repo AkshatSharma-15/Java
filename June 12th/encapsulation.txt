@@ -1,0 +1,119 @@
+1. What is Encapsulation in Java? Why is it called Data hiding?
+Ans: Ans: The process of binding data and corresponding methods (behaviour)
+together into a single unit is called encapsulation in Java.
+In other words, encapsulation is a programming technique that binds the class
+members (variables and methods) together and prevents them from being accessed by other classes, thereby we can keep variables and methods safe from outside interference and misuse.
+
+2. What are the important features of Encapsulation?
+Ans: Data Hiding
+    Abstraction
+    Access Control
+    Data Integrity
+    Modularity
+
+3. What are getter and setter methods in Java Explain with an example
+Ans: Getter and setter methods, also known as accessor and mutator methods, are
+used in Java toaccess and modify the private data members of a class,respectively. They provide a layer of
+abstraction that allows us to control the access to the data and enforce constraints on the data as needed. Here's an example to illustrate how getter and setter methods work:
+
+public class Person {
+    private String name;
+    private int age;
+    public String getName() {
+         return name;
+    }
+    public void setName(String name) {  
+        this.name = name;
+    }
+    public int getAge() {
+        return age;
+    }
+    public void setAge(int age) {
+        if (age > 0 && age < 120) {
+            this.age = age;
+        } 
+        else {
+        System.out.println("Invalid age");
+    }
+    }
+}
+
+4. What is the use of this keyword explain with an example
+Ans: Ans: this keyword refers to the current object or instance of a class. It is used to
+differentiate between instance variables and parameters or local variables that
+have the same name, and to pass the current object as a parameter to other
+methods or constructors. Here's an example to illustrate the use of the this
+keyword:
+
+public class Person {
+    private String name;
+    private int age;
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+    public void printDetails() {
+        System.out.println("Name: " + this.name);
+        System.out.println("Age: " + this.age);
+    }
+    public void changeName(String name) {
+        this.name = name;
+    }   
+    public void changeAge(int age) {
+        this.age = age;
+    }
+    public void callOtherMethod() {
+        otherMethod(this);
+    }
+    private void otherMethod(Person p) {
+    
+    }
+}
+
+5. What is the advantage of Encapsulation?
+Ans: There are the following advantages of encapsulation in Java.
+They are as follows:
+. The encapsulated code is more flexible and easy to change with new requirements.
+. It prevents the other classes from accessing the private fields.
+. Encapsulation allows modifying implemented code without breaking other code who have implemented the code.
+. It keeps the data and codes safe from external inheritance. Thus,
+Encapsulation helps to achieve security.
+. It improves the maintainability of the application.
+
+6. How to achieve encapsulation in Java? Give an example.
+Ans: Encapsulation is achieved in Java by declaring the instance variables of a
+class as private, and providing public getter and setter methods to access and
+modify the values of these variables. This allows us to control access to the
+data and ensure that it can only be modified through the methods of the class,
+rather than directly accessing the instance variables from outside the class.
+Here's an example to illustrate how encapsulation can be achieved in Java:
+
+public class BankAccount {
+    private String accountNumber;
+    private double balance;
+    public BankAccount(String accountNumber, double balance) {
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+    }
+    public String getAccountNumber() {
+        return accountNumber;
+    }
+    public void setAccountNumber(String accountNumber) {
+        this.accountNumber = accountNumber;
+    }
+    public double getBalance() {
+        return balance;
+    }
+    public void deposit(double amount) {
+        balance += amount;
+    }
+    public void withdraw(double amount) {
+        if (amount <= balance) {
+            balance -= amount;
+        }
+        else {
+             System.out.println("Insufficient funds");
+        }
+    }
+}
+

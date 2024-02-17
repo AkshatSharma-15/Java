@@ -1,0 +1,81 @@
+3. What is the difference between collections and streams?Explain with an Example
+Ans: Collections are mainly used to store and group the data. Streams are mainly used to perform operations on data. You can add or remove elements from collections. You can't add or remove elements from streams.
+
+Examples: 
+Collections:
+    import java.io.*;
+    import java.util.*;
+class Main {
+    public static void main(String[] args)
+    {
+        List<String> CompanyList = new ArrayList<>();
+        CompanyList.add("Google");
+        CompanyList.add("Apple");
+        CompanyList.add("Microsoft");
+        Comparator<String> com = (String o1, String o2) -> o1.compareTo(o2);
+        Collections.sort(CompanyList, com);
+        for (String name : CompanyList) {
+            System.out.println(name);
+        }
+    }
+}
+
+Output:
+Apple
+Google
+Microsoft
+
+Streams:
+
+import java.io.*;
+import java.util.*;
+
+class Demo {
+    public static void main(String[] args)
+    {
+        List<String> CompanyList = new ArrayList<>();
+        CompanyList.add("Google");
+        CompanyList.add("Apple");
+        CompanyList.add("Microsoft");
+        CompanyList.stream().sorted().forEach(
+        System.out::println);
+    }
+}
+
+Output:
+Apple
+Google
+Microsoft
+
+4. What is enums in java? explain with an example.
+Ans: We can use enum to define a group of named constants.
+Enums are used to represent a collection of related constants that have a common purpose. Each constant in an
+enum is an instance of the enum type, and they are typically defined as public static final fields.
+Here's an example of how to define an enum in Java:
+
+class EnumDemo{
+    public enum DayOfWeek {
+    MONDAY,
+    TUESDAY,
+    WEDNESDAY,  
+    THURSDAY,
+    FRIDAY,
+    SATURDAY,
+    SUNDAY
+}
+public static void main(String args[]){
+    for(DayOfWeek d:DayOfWeek.values())
+    System.out.println(d);
+    }
+}
+
+5. What are in built annotations in java
+Ans: built-in annotations in Java:
+Override
+Deprecated
+SuppressWarnings
+FunctionalInterface
+Retention
+Target
+Documented
+Inherited

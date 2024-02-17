@@ -1,0 +1,40 @@
+1. What is a Constructor?
+Ans: Constructors are used to initialize the object’s state. Like methods, a constructor also contains a collection of statements(i.e. instructions) that are executed at time of Object creation.
+
+2. What is Constructor Chaining?
+Ans: Constructor Chaining is a technique of calling another constructor from one constructor. this() is used to call the same class constructor whereas super() is used to call super class constructor.
+
+3. Can we call a subclass constructor from a superclass constructor?
+Ans: No. There is no way in java to call a subclass constructor from a superclass constructor.
+
+4. What happens if you keep a return type for a constructor?
+Ans: Ideally, Constructor must not have a return type. By definition, if a method has a return type, it’s not a constructor.(JLS8.8 Declaration) It will be treated as a normal method. But compiler gives a warning saying that method has a constructor name.
+
+5. What is No-arg constructor?
+Ans: Constructor without arguments is called a no arg constructor.
+Default constructor in java is always a no arg constructor.
+class Demo
+{
+public Demo()
+{
+//No arg constructor
+}
+}
+
+6. How is a No-argument constructor different from the default Constructor?
+Ans: If a class contains no constructor declarations, then a default constructor with no formal parameters and no throws clause is implicitly declared. If the class being declared is the primordial class Object, then the default
+constructor has an empty body. Otherwise, the default constructor simply invokes the superclass Assignment Solutions Cracking the Coding Interview in JAVA - Foundation constructor with no arguments.
+
+7. When do we need Constructor Overloading?
+Ans: Sometimes there is a need to initialize an object in different ways.
+This can be done using constructor overloading. Different constructors can do different work by implementing different lines of code and are called based on the type and no of parameters passed. According to the situation , a constructor is called with a specific number of parameters
+among overloaded constructors.
+
+8. What is Default Constructor.
+Ans: Default constructor
+For every java class constructor concept is applicable.
+If we don't write any constructor, then the compiler will generate a default constructor. If we write at least one constructor then the compiler won't generate any default constructor, so we say every java class will have a compiler generated default constructor or programmer written constructor but not both simultaneously.
+
+Prototype of default constructor
+There is always no argument constructor.
+The access modifier of the default constructor is the same as the class modifier. [applicable for public and default] Default constructor contains one line, super(). It is a call to super class constructor.

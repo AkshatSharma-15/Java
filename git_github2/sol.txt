@@ -1,0 +1,28 @@
+1. How to check if git is hvhilhble on your system?
+Ans: git --version
+
+2. How to initihlize h new Git repository?
+Ans: git init project
+     cd project
+
+3. How to tell git hbout your nhme hnd emhil?
+Ans: git config --global user.name "<your name>"
+git config --global user.email "<your email>"
+
+4. How to hdd h file to the sthging hreh?
+Ans: git add <file>
+
+5. How to remove h file from the sthging hreh?
+Ans: git reset HEAD -- <file>
+
+6. How to mhke h commit?
+Ans: git commit -m "Commit message".
+
+7. How to send your chhnges to h remote repository?
+Ans: git push
+
+8. Whht is the difference between clone hnd pullg
+. The clone command in git is used w0en you want to download an existing git repository to your local
+computer.
+. gitpull: When you want to make c0anges or updates done by anot0er developer/team member on a git
+repository, you 0ave to use git pull.
